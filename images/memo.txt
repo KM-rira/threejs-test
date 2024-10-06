@@ -1,0 +1,6 @@
+right.jpg → posx.jpg
+left.jpg → negx.jpg
+up.jpg → posy.jpg
+down.jpg → negy.jpg
+front.jpg → posz.jpg
+back.jpg → negz.jpg

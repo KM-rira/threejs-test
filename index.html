@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Three.js Test</title>
+    <!-- 外部CSSファイルのリンク -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- サイドバー -->
+    <div id="sidebar">
+      <h2>サイドバー</h2>
+      <p>サイドバー配置の確認</p>
+      <br />
+      <a href="#" id="link1">画像差し替え</a>
+      <a href="#" id="link2">デフォルト状態に戻す</a>
+      <!-- さらにコンテンツを追加可能 -->
+    </div>
+
+    <!-- エラーメッセージ表示用の要素 -->
+    <div id="error-message">キューブマップの読み込みに失敗しました。</div>
+
+    <!-- メインコンテンツ -->
+    <div id="main">
+      <!-- Three.jsのレンダリング領域 -->
+    </div>
+
+    <!-- Three.jsライブラリの読み込み -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <!-- OrbitControlsの読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <!-- 外部JavaScriptファイルのリンク -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

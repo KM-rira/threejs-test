@@ -1,0 +1,66 @@
+/* 全体のスタイルリセット */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* サイドバーのスタイル */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px; /* サイドバーの幅 */
+  height: 100%;
+  background-color: #2c3e50; /* サイドバーの背景色 */
+  color: white;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 1000; /* Three.jsのcanvasより前面に表示 */
+}
+
+/* サイドバー内のタイトル */
+#sidebar h2 {
+  margin-bottom: 15px;
+  font-size: 24px;
+  border-bottom: 1px solid #34495e;
+  padding-bottom: 10px;
+}
+
+/* メインコンテンツのスタイル */
+#main {
+  margin-left: 250px; /* サイドバーの幅と同じ値 */
+  width: calc(100% - 250px); /* 残りの幅を計算 */
+  height: 100vh; /* ビューポートの高さに合わせる */
+}
+
+/* Three.jsのcanvasを画面全体に広げる */
+canvas {
+  display: block; /* ブラウザのデフォルトマージンを無効化 */
+}
+
+/* サイドバー内のリンクやボタンのスタイル */
+#sidebar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer; /* カーソルをポインターに変更 */
+}
+
+#sidebar a:hover {
+  color: #3498db;
+}
+
+/* エラーメッセージ表示用のスタイル */
+#error-message {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+  z-index: 1500; /* サイドバーより前面に表示 */
+}
